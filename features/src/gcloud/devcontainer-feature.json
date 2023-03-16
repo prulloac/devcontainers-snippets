@@ -1,0 +1,35 @@
+{
+    "name": "Google Cloud SDK CLI",
+    "id": "gcloud-cli",
+    "version": "1.0.0",
+    "description": "Install gcloud-cli",
+    "documentationURL": "https://github.com/dhoeric/features/tree/main/src/google-cloud-cli",
+    "options": {
+        "version": {
+            "type": "string",
+            "proposal": [
+                "latest"
+            ],
+            "default": "latest",
+            "description": "Select or enter a gcloud CLI version"
+        },
+        "pubsubEmulator": {
+            "type": "string",
+            "default": false,
+            "description": "Install additional pubsub emulator"
+        },
+        "bigtableEmulator": {
+            "type": "string",
+            "default": false,
+            "description": "Install additional bigtable emulator"
+        },
+        "cbt": {
+            "type": "string",
+            "default": false,
+            "description": "Install additional cbt CLI"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}

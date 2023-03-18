@@ -9,8 +9,20 @@
 	// "features": {},
 	"features": {
 		"ghcr.io/devcontainers/features/github-cli:1": {},
+		"ghcr.io/devcontainers/features/docker-in-docker": {
+			"moby": false,
+			"azureDnsAutoDetection": false,
+			"dockerDashComposeVersion": "v2"
+		},
+		"ghcr.io/devcontainers/features/java": {
+			"installMaven": true,
+			"version": "17",
+			"jdkDistro": "tem"
+		},
 		"./features/src/gcloud": {
-			"cbt": true
+			"cbt": true,
+			"pubsubEmulator": true,
+			"bigtableEmulator": true
 		}
 	},
 
